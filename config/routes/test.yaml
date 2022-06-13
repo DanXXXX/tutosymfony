@@ -1,0 +1,18 @@
+# test:
+#    # création de route dynamique 
+#    # mise en place de raccourcis de contrainte et defaults
+#    path: /test/{age<\d+>?0}
+#    controller: App\Controller\TestController::test
+#    methods: [GET, POST]
+#    host: localhost
+#    schemes: [https, http]
+#    # contrainte sur les routes
+#    # host: {subdomain}.monsite.com
+
+#    # api.monsite.com && www.monsite.com && monsite.com
+#    # default nous permet d'avoir un parametre par default au cas d'attibut manquant
+#    # defaults:
+#    #    age: 0
+#    # requirements permet de mettre des contraintes, ici nous la contrainte est de ne recevoir uniquement des chiffres non decimaux
+#    # requirements:
+#    #    age: \d+
